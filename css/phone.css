@@ -79,3 +79,11 @@
 footer{
     overflow: hidden;
 }
+#contactbox input, textarea{
+    width: 90%;
+    color: black;
+    padding: 10px;
+    margin: 9px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
