@@ -1,0 +1,364 @@
+/* setting base parameters + utilities  */
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+ }
+ :root{
+     --darkcolor : black;
+     --boxshadow2: 2px 2px 5px rgba(255, 255, 255,0.5),2px -2px 5px rgba(255, 255, 255,0.5),-2px 2px 5px rgba(255, 255, 255,0.5),-2px -2px 5px rgba(255, 255, 255,0.5);
+     --boxshadow3: 2px 2px 5px rgba(95, 91, 91, 0.5),2px -2px 5px rgba(95, 91, 91, 0.5),-2px 2px 5px rgba(95, 91, 91, 0.5),-2px -2px 5px rgba(95, 91, 91, 0.5);
+ }
+ html{
+     scroll-behavior: smooth;
+     font-size: 100%;
+     font-family: 'Baloo Tamma 2', cursive;
+}
+.boxshadow1{
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5),2px -2px 5px rgba(0, 0, 0, 0.5),-2px 2px 5px rgba(0, 0, 0, 0.5),-2px -2px 5px rgba(0, 0, 0, 0.5);
+}
+.boxshadow2{
+        box-shadow: 2px 2px 5px rgba(255, 255, 255,0.5),2px -2px 5px rgba(255, 255, 255,0.5),-2px 2px 5px rgba(255, 255, 255,0.5),-2px -2px 5px rgba(255, 255, 255,0.5);
+}
+.boxshadow3{
+        box-shadow: 2px 2px 5px rgba(95, 91, 91, 0.5),2px -2px 5px rgba(95, 91, 91, 0.5),-2px 2px 5px rgba(95, 91, 91, 0.5),-2px -2px 5px rgba(95, 91, 91, 0.5);
+}
+.primary{
+        color: white;
+        font-size: 2.4rem;
+}
+.btn{
+    cursor: pointer;
+    font-size: 1.4rem;
+    color: white;
+    padding: 6px 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: rgb(173, 162, 162,.4);
+}
+.btn:hover{
+    transition: all .2s ease;
+    transform: scale(1.1);
+    color: white;
+    border: 2px solid grey;
+    box-shadow: var(--boxshadow2);
+}
+/* /////////////////////// */
+ /* bar section  */
+ #bar{
+    position: sticky;
+    top: 0px; 
+    height: 11vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    z-index: 1;
+}
+#bar::before{
+    content: "";
+    background-color: var(--darkcolor);
+    position: absolute;
+    top:0px;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+#logo{
+    width:120px;
+    margin-top: 10px;
+}
+#logo img{
+    width: 75px;
+}
+#bar ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#bar ul li{
+    list-style: none;
+    align-self: center;
+}
+#bar li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.3rem;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin: 14px;
+}
+#bar li a:hover{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-size: 1.3rem;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin: 14px;
+}
+/* /////////////////////////////// */
+/* intro */
+#intro{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 16%;
+    justify-content: space-around;
+    margin-bottom: 25vh;
+}
+#intro::before{
+    content: "";
+    background: url("../img/4.jpg") no-repeat center center/cover;
+    position: absolute;
+    top:40px;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.85;
+}
+#intrologo{
+    font-size: 2.6rem;
+    border-radius: 20px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    margin: 10px;
+    backdrop-filter: blur(4px);
+    z-index: -1;
+}
+#intropara{
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#intropara button a{
+    text-decoration: none;
+    color: white;
+}
+/* //////////////////////////// */
+/* specialities */
+#specialities{
+    display: flex;
+}
+#special::before{
+    content: "";
+    background: url("../img/1.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 168%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.85;
+}
+.specialhead{
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+}
+#special{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 8%;
+}
+ .special-box{
+    align-self: center;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 20px 20px 50px 1px rgb(0, 0, 0,0.5);
+    background: rgb(255, 255, 255,0.1);
+    border-top: 0.5px solid white;
+    border-left: 0.5px solid white;
+    backdrop-filter:blur(7px);
+    height: 74vh;
+    width: 350px; 
+    padding: 20px;
+    margin: 25px 30px; 
+    transition: all 0.4s;
+    
+}
+.special-box:hover{
+    height: 80vh;
+    transform: scale(1.05);
+    border-bottom: 0.5px solid white;
+    border-right: 0.5px solid white;
+    border-top: 0.5px solid gray;
+    border-left: 0.5px solid gray;
+    
+}
+.special-box h2{
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+}
+ .special-box p{
+     color: white;
+    font-size: .9rem;
+    text-align: justify;
+}
+.special-box img{
+    display: block;
+    height: 220px; 
+    width: 240px;
+    border-radius: 28px;
+    margin: auto;
+}
+.discount{
+    color: rgb(250, 35, 35);
+    text-decoration: line-through;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+.discount1{
+    display: inline-block;
+    font-size: 1.1rem;
+    color: rgb(36, 231, 36);
+    margin-left: 5px;
+    margin-bottom: 3px;
+    border: 1px solid green;
+    border-radius: 15px;
+    padding: 1px 3px;
+}
+/* ///////////////////////// */
+/* button section  */
+.btm{
+    color: white;
+    background-color: gray;
+    cursor: pointer;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255,0.1);
+    padding: 3px 6px;
+    margin-bottom: 9px;
+}
+.btm:hover{
+    color: black;
+    background-color:white ;
+}
+.btm:focus{
+    background-color: yellowgreen;
+}
+/* recommendations  */
+/* ////////////////////// */
+.search {
+    display:flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.search  input{
+    font-size: 1.2rem;
+    border-radius: 15px;
+    padding: 4px;
+    margin-right: 10px;
+    box-shadow: var(--boxshadow3);
+}
+.search img{
+    width: 32px;
+    cursor: pointer;
+}
+#recommendation{
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 54px;
+}
+#recommend::before{
+    content: "";
+    background: url("../img/3.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 180%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.85;
+}
+#recommend{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 8%;
+}
+/* /////////////////// */
+/* footer  */
+footer{
+    background-color: black;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+/* ///////////////////////// */
+/* review  */
+.custo{
+    margin-left: 4px;
+}
+.custo1{
+    text-align: center;
+    display: inline-block;
+    width: 28px;
+    height: 24PX;
+    color: white;
+    background: #aaa;
+    border-radius: 50px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,.3)
+}
+#review-section{
+    margin-top: 30px;
+    display: flex;
+    flex-flow: column wrap;
+}
+#review-section::before{
+    align-self: center;
+    border: 2px solid brown;
+    height: 70vh;
+    width: 350px; 
+    padding: 20px;
+    margin: 25px 30px; 
+    border-radius: 25px;
+    box-shadow: 1px 1px 7px rgb(212, 87, 87), -1px -1px 7px rgb(212, 87, 87),
+    1px -1px 7px rgb(212, 87, 87) ,-1px 1px 7px rgb(212, 87, 87);
+    background-color: rgba(240, 154, 154, 0.3);
+    transition: all 1s ease;
+}
+#review{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.review-box{
+    align-self: center;
+    border: 2px solid brown;
+    height: 70vh;
+    width: 350px; 
+    padding: 20px;
+    margin: 25px 30px; 
+    border-radius: 25px;
+    box-shadow: 1px 1px 7px rgb(212, 87, 87), -1px -1px 7px rgb(212, 87, 87),
+    1px -1px 7px rgb(212, 87, 87) ,-1px 1px 7px rgb(212, 87, 87);
+    background-color: rgba(240, 154, 154, 0.3);
+} 
+.review-box h2{
+    margin: auto;
+    display: inline-block;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.review-box p{
+    font-size: .9rem;
+    text-align: justify;
+}
+
+.review-box img{
+    box-shadow: var(--boxshadow3);
+    border-top: 0.5px solid white;
+    border-left: 0.5px solid white;
+    display: block;
+    width: 220px;
+    margin: auto; 
+    border-radius: 28px;
+}

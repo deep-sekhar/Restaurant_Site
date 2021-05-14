@@ -1,0 +1,81 @@
+
+#bar{
+    position: sticky;
+    top: 0px; 
+    height: 17vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+}
+#bar ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#bar li a{
+    text-decoration: none;
+    color: white;
+    font-size: .9rem;
+    padding: 4px 4px;
+    border-radius: 20px;
+    margin: 14px;
+}
+#bar li:nth-child(3){
+    display:none;
+}
+#bar li a:hover{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    font-size: 1rem;
+    padding: 4px 4px;
+    border-radius: 20px;
+    margin: 8px;
+}
+#intropara{
+    color: white;
+    text-align: center;
+    margin: 10px;
+    order: 2;
+}
+#intro::before{
+    content: "";
+    background: url("../img/4.jpg") no-repeat center center/cover;
+    position: absolute;
+    top:40px;
+    height: 130%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.85;
+}
+#special .special-box p{
+    font-size: .9rem;
+    text-align: justify;
+}
+#special::before{
+    position: absolute;
+    height: 512%;
+    width: 100%;
+}
+#special .special-box:hover{
+    height: 76%;
+    transform: scale(1.01);
+    border-bottom: 0.5px solid white;
+    border-right: 0.5px solid white;
+    border-top: 0.5px solid gray;
+    border-left: 0.5px solid gray;
+}
+#recommend::before{
+    content: "";
+    background: url("../img/3.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 525%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.85;
+}
+footer{
+    overflow: hidden;
+}
