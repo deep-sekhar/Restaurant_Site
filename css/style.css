@@ -290,6 +290,14 @@ footer{
     margin: 10px;
     text-align: center;
 }
+.footlogo{
+    display: inline-block;
+    margin-left: 15px;
+}
+.footlogo a{
+    color: white;
+    text-decoration: none;
+}
 /* ///////////////////////// */
 /* review  */
 .custo{
@@ -361,4 +369,46 @@ footer{
     width: 220px;
     margin: auto; 
     border-radius: 28px;
+}
+/* contact section  */
+
+#contact::before{
+    content: "";
+    background: url('../img/contact.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 106%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+#contactbox{
+    display: flex;
+    flex-flow: columnq wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    
+}
+#contactbox input, textarea{
+    width: 90%;
+    color: white;
+    padding: 10px;
+    margin: 9px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+.primary-center{
+    color: black;
+    text-align: center;
+    margin: auto;
+    width: 150px;
+}
+
+#q{
+    width: 100px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+#contactbox label{
+    font-size: 1.3rem;
 }
