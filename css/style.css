@@ -298,6 +298,10 @@ footer{
     color: white;
     text-decoration: none;
 }
+#footlink a{
+    text-decoration: none;
+    color: white;
+}
 /* ///////////////////////// */
 /* review  */
 .custo{
@@ -371,7 +375,7 @@ footer{
     border-radius: 28px;
 }
 /* contact section  */
-
+/* ///////////////////////////// */
 #contact::before{
     content: "";
     background: url('../img/contact.jpg') no-repeat center center/cover;
