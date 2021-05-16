@@ -210,6 +210,10 @@
     text-decoration: line-through;
     margin-left: 10px;
     font-size: 1.2rem;
+    position: absolute;
+    right: 35%;
+    top: 90%;
+
 }
 .discount1{
     display: inline-block;
@@ -220,6 +224,9 @@
     border: 1px solid green;
     border-radius: 15px;
     padding: 1px 3px;
+    position: absolute;
+    right: 8%;
+    top: 90%;
 }
 /* ///////////////////////// */
 /* button section  */
@@ -231,7 +238,8 @@
     border-radius: 25px;
     background-color: rgb(255, 255, 255,0.1);
     padding: 3px 6px;
-    margin-bottom: 9px;
+    position: absolute;
+    bottom: 5%;
 }
 .btm:hover{
     color: black;
